@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Clint Lin |  Form</title>
+
+    <style>
+        h1{
+            text-align: center;
+
+        }
+
+        .left{
+            width: 300px;
+        }
+
+        .form{
+            margin: 15px 0px;
+
+        }
+
+        #main{
+            border: solid 3px #000;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            width: 750px;
+
+            padding: 10px 30px 15px 30px;
+        }
+
+        #message{
+            width: 500px;
+            height: 100px;
+        }
+
+        #end{
+            margin: 40px 0px 0px 0px;  
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+    <h1>Intramural Sports Sign Up For</h1>
+
+    
+
+        <form action="confirmation.html">
+            <div class="form">
+				<div class="left">
+
+				<label for="name">Name:</label>
+				</div>
+				<input type="text" id="name" placeholder="Lebron James">
+
+			</div>	
+
+            <div class="form">
+				<div class="left">
+				<label for="usc-id">USC ID #:</label>
+				</div>
+			<input type="text" id="usc-id" placeholder="1234567890">
+			</div>
+
+            <div class="form">
+				<div class="left">
+				<label for="email">Email:</label>
+				</div>
+			<input type="email" id="email" placeholder="sjlaskdjf@usc.edu">
+			</div>
+
+            <div class="form">
+				Are you a current student?
+
+				<label>
+					<input type="radio" name="student">
+					Yes
+				</label>
+				
+				<label>
+					<input type="radio" name="student">
+					No
+				</label>
+			</div>
+
+            <div class="form">
+				What Year Are You?
+
+				<label>
+					<input type="radio" name="year">
+					Freshmen
+				</label>
+
+				<label>
+					<input type="radio" name="year">
+					Sophomore
+				</label>
+
+				<label>
+					<input type="radio" name="year">
+					Junior
+				</label>
+
+                <label>
+					<input type="radio" name="year">
+					Senior
+				</label>
+
+                <label>
+					<input type="radio" name="year">
+					Graduate
+				</label>
+			</div>
+
+            <div class="form">
+				Which Sports Are You Signing Up For?
+
+				<label>
+					<input type="checkbox">
+					Basketball
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Soccer
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Flag Football
+				</label>
+
+                <label>
+					<input type="checkbox">
+					Pickle Ball
+				</label>
+
+                <label>
+					<input type="checkbox">
+					Badminton
+				</label>
+
+                <label>
+					<input type="checkbox">
+					Volleyball
+				</label>
+			</div>
+
+            <div class="form">
+				<label for="dues">Have You Paid Your Membership Dues?</label>
+
+				<select id="dues">
+                    <option>Options</option>
+					<option>Yes, I have</option>
+					<option>Payment is still validating</option>
+					<option>Not yet</option>
+                    <option>Don't know how to</option>
+				</select>
+			</div>
+
+            <div class="form">
+				<label for="message"> Are you interested in becoming a student worker for intramural sports? If so list why (300 Words Maximum):</label>
+
+				<textarea id=message placeholder="Hello..."></textarea>
+			</div>
+
+            <div class="form">
+				<label>
+					<input type="checkbox" name="terms">
+					Do you accept the terms and conditions
+				</label>
+            </div>
+
+            <div class="form" id="end">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                </div>
+
+
+
+        </form>
+
+    </div>
+</body>
+
+
+</html>
