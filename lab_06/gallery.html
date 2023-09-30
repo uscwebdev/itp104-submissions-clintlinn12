@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Clint Lin | Photo Gallery</title>
+
+
+    <style>
+        .photo{
+            display: block;
+            opacity: 0.7;
+
+            height: 300px;
+            width: auto;
+    
+            padding-top: 20px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .photo:hover{
+            opacity: 1.0;
+        }
+
+        .img-container >p{
+            display: none;
+        }
+
+        .photo:hover +p{
+            display: block;
+
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="img-container">
+        <img src="img/bronny.jpg" alt="Bronny James" class="photo">
+        <p>Bronny James</p>
+    </div>
+
+    <div class="img-container">
+        <img src="img/kd.jpg" alt="Kevin Durant" class="photo">
+        <p>Kevin Durant</p>
+    </div>
+
+    <div class="img-container">
+        <img src="img/kyrie.jpg" alt="Kyrie Irving" class="photo">
+        <p>Kyrie Irving</p>
+    </div>
+
+    <div class="img-container">
+        <img src="img/lebron.jpg" alt="Lebron James" class="photo">
+        <p>Lebron James</p>
+    </div>
+
+    <div class="img-container">
+        <img src="img/nikola.jpg" alt="Nikola Jokic" class="photo">
+        <p>Nikola Jokic</p>
+    </div>
+
+</body>
+
+
+
+
+
+
+</html>
