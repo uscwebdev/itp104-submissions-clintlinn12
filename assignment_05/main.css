@@ -1,0 +1,32 @@
+#navbar a {
+    text-decoration: none;
+    /* background-color: #FC0; */
+    /* 
+        600px / 4 = 150px per menu option
+    */
+    width: 540px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    display: block;
+
+    color: #000;
+
+    border-bottom: 2px solid #FFF;
+
+    background-color: mintcream;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: #900;
+    border-bottom: 2px solid #900;
+}
+
+
