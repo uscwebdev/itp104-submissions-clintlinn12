@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clint Lin | Gallery</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+        #basketball{
+                height: 400px;
+                text-align: center;
+                line-height: 400px;
+
+                background-image: url("img/stadium.jpg");
+
+                background-size: cover;
+                background-position: center;
+
+                color:mintcream;
+                text-shadow: 0px 0px 10px #000;
+
+                width: 1080px;
+
+
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0px;
+
+                flex-wrap: wrap;
+            }
+
+        body{
+            background-color: darkgrey;
+
+
+        }
+
+        #main{
+            width: 1040px;
+            margin-left: auto;
+            margin-right: auto;
+
+            background-color: white;
+            padding: 20px;
+        }
+
+        #big{
+            width: 1040px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            flex: row;
+            
+            gap: 20px;
+            
+            align-items: flex-start;
+
+        }
+
+        #one{
+            width: 430px;
+        }
+
+        #two{
+            width: 580px;
+
+        }
+
+        #three{
+            width: 500px;
+        }
+
+        #four{
+            width: 240px;
+        }
+
+        #five{
+            width: 250px;
+        }
+
+        #six{
+            width: 190px;
+        }
+
+        #seven{
+            width: 190px;
+        }
+
+        #eight{
+            width: 190px;
+        }
+
+        #nine{
+            width: 400px;  
+        }
+
+        #ten{
+            width: 1035px;
+        }
+
+        .photos{
+            
+
+            background-color: lightgrey;
+
+            border: 1px solid #000; 
+
+            height: 250px;
+            overflow: hidden;
+			position: relative;
+            
+        }
+
+        #navbar ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #navbar li{
+            background-color: lightgrey;
+            text-align: center;
+            position: relative;
+        }
+
+        #top-menu {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        #navbar li:hover {
+            background-color: #FC0;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            display: block;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #top-menu ul {
+            position: absolute;
+            display: none;
+        }
+
+        #sub-menu ul {
+            top: 0px;
+            left: 180px;
+        }
+
+        #navbar li:hover > ul {
+            display: block;
+        }
+
+        .photos:hover > .overlay {
+			visibility: visible;
+		}
+
+        .overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+
+			padding-top: 100px;
+
+			visibility: hidden;
+        }
+
+        .photos > img{
+            height: 100%;
+            width: auto;
+        }
+
+        .photos  > .width-100 {
+			width: 100%;
+			height: auto;
+		}
+
+        #one> img{
+            width: 110%;
+        }
+
+        #two > img{
+            width: 110%;
+        }
+
+        #three > img{
+            width: 100%;
+        }
+
+        #four > img{
+            position: relative;
+            right: 70px;
+        }
+
+        #five > img{
+            position: relative;
+            right: 70px;
+        }
+
+        #six > img{
+            position: relative;
+            right: 30px;
+        }
+
+        #seven > img{
+            position: relative;
+            right: 150px;
+        }
+
+        #eight > img{
+            position: relative;
+            right: 110px;
+        }
+
+        #nine > img{
+            width: 100%;
+
+        }
+
+        #ten > img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="basketball">
+        <h1>Gallery</h1>
+    </div>
+
+    <div id="navbar">
+        <ul id="top-menu">
+
+            <li>
+                <a href="interest.html#home">Home</a>
+                <ul id="sub-menu">
+                    <li><a href="interest.html#home">Overview</a></li>
+                    <li><a href="interest.html#NBA">NBA</a></li>
+                    <li><a href="interest.html#uscball">Basketball At USC</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+<div id="wrapper">
+    <div id="main">
+        <h1>Basketball Teams</h1>
+
+    <div id="big">
+        <div id="one" class="photos">
+            <img src="img/overlay/ad.jpg" alt="Anthony Davis">
+            <div class="overlay">Anthony Davis</div>
+        </div>
+        <div id="two" class="photos">
+            <img src="img/overlay/booker.jpg" alt="Devin Booker">
+            <div class="overlay">Devin Booker</div>
+        </div>
+        <div id="three" class="photos">
+            <img src="img/overlay/curry.jpg" alt="Stephen Curry">
+            <div class="overlay">Stephen Curry</div>
+        </div>
+        <div id="four" class="photos">
+            <img src="img/overlay/dame.jpg" alt="Damian Lillard">
+            <div class="overlay">Damian Lillard</div>
+        </div>
+        <div id="five" class="photos">
+            <img src="img/overlay/embiid.jpg" alt="Joel Embiid">
+            <div class="overlay">Joel Embiid</div>
+        </div>
+        <div id="six" class="photos">
+            <img src="img/overlay/gordon.jpg" alt="Aaron Gordon">
+            <div class="overlay">Aaron Gordon</div>
+        </div>
+        <div id="seven" class="photos">
+            <img src="img/overlay/harden.jpg" alt="James Harden">
+            <div class="overlay">James Harden</div>
+        </div>
+        <div id="eight" class="photos">
+            <img src="img/overlay/lavine.jpg" alt="Zach Lavine">
+            <div class="overlay">Zach Lavine</div>
+        </div>
+        <div id="nine" class="photos">
+            <img src="img/overlay/shai.jpeg" alt="SGA">
+            <div class="overlay">SGA</div>
+        </div>
+        <div id="ten" class="photos">
+            <img src="img/overlay/wemby.jpg" alt="Victor Wembenyama">
+            <div class="overlay">Victor Wembenyama</div>
+        </div>
+
+    </div>
+
+    </div>
+</div>
+</body>
+
+
+
+</html>
