@@ -5,6 +5,8 @@
 <head>
     <title>Clint Lin | Student Page</title>
 
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
     <style>
         strong{
             color:darkseagreen;
@@ -29,8 +31,6 @@
 
         #wrapper{
             display: flex;
-            flex: row;
-            justify-content: center;
 
             width: 860px;
             margin-left: auto;
@@ -49,15 +49,26 @@
             width: 860px;
         }
 
-        .main1{
-            width: 400px;
-            padding: 15px;
-        }
+        @media (max-width: 767px){
+            body{
+                width: auto;
+                flex-direction: column;
+            }
 
-        .side1{
-           width: 400px;
-           padding: 15px;
-           
+            .main{
+                flex-direction: column;
+                width: 767px;
+            }
+
+            .side ul{
+                flex-direction: column;
+            }
+
+            .side li{
+                width: auto;
+            }
+
+
         }
 
 
@@ -104,7 +115,7 @@
         <hr>
     </div>
     
-    <div class="main1">
+    <div class="main">
         <p>Assignments:</p>
         
         <ul>
@@ -134,7 +145,7 @@
         </div>
         <!-- main -->
 
-    <div class="side1">
+    <div class="side">
         <p>Labs:</p>
 
         <ul>
@@ -159,6 +170,10 @@
 
         <ul>
             <li><a target="_blank" href="lab_07/puzzle.html"> Lab 7:Image Puzzle</a></li>
+        </ul>
+
+        <ul>
+            <li><a target="_blank" href="index.html"> Lab 8: Updated Student Page</a></li>
         </ul>
 
         </div>
