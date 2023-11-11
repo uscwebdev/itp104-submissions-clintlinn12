@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #container{
+                position: relative;
+            }
+
+            img{
+                width: auto;
+                height: 200px;
+                margin-top: 150px;
+                margin-right: 100px;
+
+                border: solid #000 2px;
+            }
+            #container img{
+                transition: all 6s;
+            }
+
+            #one{
+                position: fixed;
+            }
+            
+            #two{
+                position: fixed;
+                margin-left: 25px;
+            }
+
+            #three{
+                margin-left: 75px;
+            }
+
+            body{
+                background-color: antiquewhite;
+            }
+
+            #o img:hover{
+                transform: translateY(220px);
+            }
+
+            #t img:hover{
+                transform: translate(-25px, 220px)
+            }
+
+            #th img:hover{
+                transform: translate(-75px, 220px)
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="o">
+                <img id="one" src="img/galen.png" alt="Galen">
+            </div>
+            <div id="t">
+                <img id="two" src="img/lyon.jpg" alt="Lyon">
+            </div>
+            <div id="th">
+                <img id="three" src="img/stadium.jpg" alt="Stadium">
+            </div>
+        </div>
+    </body>
+</html>
