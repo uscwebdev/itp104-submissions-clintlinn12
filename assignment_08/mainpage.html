@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Final Project | Main Page</title>
+
+    <meta name="description" content="At CookHub, we believe that the joy of cooking should be a universal experience, accessible to students and individuals of all ages. Our vibrant online platform is meticulously crafted to serve as a gateway for anyone, regardless of their culinary expertise, to embark on a delightful journey into the diverse and flavorful world of cooking.">
+
+    <head>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #header{
+                height: 400px;
+                text-align: center;
+                line-height: 400px;
+
+                background-image: url(img/header.jpg);
+
+                background-size: cover;
+                background-position: center;
+
+                color:mintcream;
+                text-shadow: 0px 0px 10px #000;
+
+                width: auto;
+                height: 400px;
+
+
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0px;
+
+                flex-wrap: wrap;
+
+                font-size: 3em;
+            }
+
+            #top-menu{
+                position: relative;
+                text-align: center;
+                justify-content: center;
+
+                display: flex;
+
+            }
+
+            #navigation ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+
+                font-size: 1.3em;
+
+            }
+
+            #navigation li{
+                background-color: lightsteelblue;
+                text-align: center;
+                position: relative;
+
+                width: 507px;
+            }
+
+            #navigation a{
+                text-decoration: none;
+
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+
+                color: whitesmoke;
+
+                width: 507px;
+
+            }
+
+            #top-menu ul {
+                display: none;
+            }
+
+            #sub-menu li{
+                width: auto;
+
+                text-align: center;
+
+                font-size: large;
+            }
+
+            #navigation li:hover > ul {
+                display: block;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            #content{
+                margin-left: auto;
+                margin-right: auto;
+
+                margin: 50px;
+
+                margin-top: 10px;
+            }
+
+            #paragraph{
+                margin-left: auto;
+                margin-right: auto;
+
+                margin: 50px;
+
+                margin-top: 10px;
+
+                display: flex;
+                flex-direction: row;
+            }
+
+
+            #main{
+                width: 1080px;
+                margin-left: auto;
+                margin-right: auto;
+
+                
+            }
+
+            #cuisine{
+                width: 680px;
+                height: auto;
+
+                padding-right: 15px;
+                float: left;
+
+            }
+
+            #paragraph1{
+                width: auto;
+                
+            }
+
+            #container{
+                display: flex;
+                justify-content: center;
+
+                margin-left: auto;
+                margin-right: auto;
+                width: 1080px;
+
+                margin-top: 70px;
+            }
+
+            #container2{
+                width: 400px;
+                padding: 20px;
+
+
+            }
+
+            #side{
+                width: 600px;
+                padding: 20px;
+            }
+
+            #navigation a:hover, #navigation{
+                color:lightblue;
+                border-bottom: 2px solid lightblue;
+            }
+
+            #content1{
+                padding: 40px;
+                margin-bottom: 80px;
+                background-color: #DFF2FF;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            #content2{
+                padding: 40px;
+                padding-top: 20px;
+                
+                background-color: #EDF2FB;
+                margin-bottom: 80px;
+            }
+
+            #content3{
+                padding: 40px;
+                padding-top: 20px;
+                
+                background-color: #F6F7F0;
+                margin-bottom: 80px;
+                padding-left: 0px;
+            }
+
+            #cuisine2{
+                width: 680px;
+                height: auto;
+                padding-left: 40px;
+                float: left;
+                padding-right: 15px;
+            }
+
+            #cuisine3{
+                width: 680px;
+                height: auto;
+                padding-left: 40px;
+                float: left;
+                padding-right: 15px;
+            }
+
+            #content4{
+                padding: 40px;
+                padding-top: 20px;
+                
+                background-color: #E2F1F7;
+                margin-bottom: 80px;
+                padding-left: 0px;
+            }
+
+            #cuisine4{
+                width: 680px;
+                height: auto;
+                padding-left: 40px;
+                float: left;
+                padding-right: 15px;
+            }
+
+            #content5{
+                padding: 40px;
+                padding-top: 20px;
+                
+                background-color: #F3FDFE;
+                margin-bottom: 80px;
+                padding-left: 0px;
+            }
+
+            #footer{
+                background-color: lightsteelblue;
+			    text-align: center;
+			    color: whitesmoke;
+			    height: 50px;
+			    line-height: 50px;
+            }
+
+            .form{
+                width: 1080px;
+                text-align: center;
+                padding-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #message{
+                width: 500px;
+                height: 300px;
+            }
+
+            #bottom{
+                background-color:aliceblue;
+                padding-top: 20px;
+                width: 2030px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="navigation">
+            <ul id="top-menu">
+                <li>
+                    <a href="mainpage.html#header">Home</a>
+                </li>  
+                
+                <li> 
+                    <a href="mainpage.html#cuisine">Cuisine</a>
+                    <ul id="sub-menu">
+                        <li><a href="asian.html">Asian</a></li>
+                        <li><a href="american.html">American</a></li>
+                        <li><a href="italian.html">Italian</a></li>
+                        <li><a href="easy.html">Easy</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="mainpage.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="header">
+            CookHub
+        </div>
+
+        <div id="main">
+        <div id="container">
+            <div id="content">
+                <div id="content1">
+                <h1>Purpose</h1>
+                <p>
+                    At CookHub, we believe that the joy of cooking should be a universal experience, accessible to students and individuals of all ages. Our vibrant online platform is meticulously crafted to serve as a gateway for anyone, regardless of their culinary expertise, to embark on a delightful journey into the diverse and flavorful world of cooking. Our mission is rooted in the idea that preparing delicious meals should be an empowering and inclusive activity. Whether you're a novice eager to experiment in the kitchen or an experienced chef looking for fresh inspiration, CookHub is your go-to destination for culinary exploration. We understand that the art of cooking is not just a skill; it's an enriching and rewarding journey that should be enjoyed by everyone. With easy-to-follow recipes, engaging content, and a supportive community, CookHub is here to transform your kitchen into a space where creativity flourishes, and the satisfaction of crafting delectable meals knows no bounds. Join us on this culinary adventure, where every dish tells a story, and cooking becomes a source of joy for all!</p>
+
+                </div>
+
+                <div id="content2">
+                <h1>Asian</h1>
+            
+                    <img id="cuisine" src="img/asian.jpg" alt="Asian Cuisine">
+
+                    <p>
+                        Asian cuisine is a diverse culinary tapestry shaped by the unique flavors and cooking techniques of East Asian countries like China, Japan, and Korea, as well as Southeast Asian nations such as Thailand, Vietnam, Malaysia, Indonesia, and the Philippines. Emphasizing a balance of flavors, Asian dishes often feature staples like rice and noodles alongside an array of fresh vegetables, herbs, and seafood. The cuisine is characterized by the skillful use of spices, such as ginger and chili, and various cooking methods like stir-frying and steaming. Influenced by historical, religious, and colonial factors, Asian cuisine offers a rich and dynamic culinary experience, with each region contributing its own distinctive culinary traditions to the overall mosaic.
+                    </p>
+                    <p></p>
+                </div>
+
+                <div id="content3">
+                    <h1>American</h1>
+
+                    <img id="cuisine2" src="img/american.jpg" alt="American Cuisine">
+
+                    <p>
+                        American cuisine is an amalgamation of culinary traditions shaped by the multicultural fabric of the United States. Rooted in Native American, European, African, and Asian influences, American food reflects regional variations and historical developments. Classic American dishes include hamburgers, hot dogs, and apple pie, while barbecue styles vary across regions. Southern cuisine is known for its soul food, featuring dishes like fried chicken and collard greens, influenced by African American culinary traditions. The Midwest embraces hearty fare, with meat-centric dishes and casseroles. The West Coast is characterized by a focus on fresh, locally sourced ingredients, fostering a vibrant farm-to-table movement. American cuisine is marked by its adaptability, fusion of global flavors, and a continual evolution influenced by immigration and cultural diversity.
+                    </p>
+                </div>
+
+                <div id="content4">
+                    <h1>Italian</h1>  
+                    
+                    <img id="cuisine3" src="img/italian.jpg" alt="Italian Cuisine">
+
+                    <p>
+                        Italian cuisine is renowned for its rich culinary heritage, emphasizing the use of high-quality, seasonal ingredients and simple yet flavorful preparations. With a diverse regional influence, Italian cuisine varies from north to south, featuring iconic dishes such as pasta, risotto, and pizza. Northern Italian cuisine tends to incorporate butter, cream, and rice, while southern regions favor olive oil, tomatoes, and durum wheat. Herbs like basil and oregano, along with cheeses like Parmesan and mozzarella, play a significant role. Italian meals often consist of multiple courses, starting with antipasti and progressing through primi (first course) and secondi (main course), concluding with dolci (desserts). The emphasis on fresh, local ingredients, combined with a commitment to traditional techniques, renders Italian cuisine a celebration of simplicity and authenticity in the realm of global gastronomy.
+                    </p>
+                </div>
+
+                <div id="content5">
+                    <h1>Easy</h1>
+
+                    <img id="cuisine3" src="img/easy.jpg" alt="Easy Recipe">
+
+                    <p>
+                        Easy recipes are simple and quick-to-prepare culinary instructions that cater to individuals with varying levels of cooking expertise. These recipes typically feature a minimal number of steps and readily available ingredients, making them accessible for both beginners and those looking for convenient meal options. Easy recipes often prioritize efficiency without sacrificing flavor, encouraging a streamlined cooking process. They cover a broad range of cuisines and include dishes such as one-pan meals, sheet pan dinners, and straightforward pasta or stir-fry recipes. With a focus on simplicity, easy recipes aim to facilitate enjoyable and stress-free home cooking experiences for individuals with diverse schedules and culinary preferences.
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <h1 id="contact">Contact Me</h1>
+        <div class="form">
+            <div class="left">
+
+            <label for="name">Name:</label>
+            </div>
+            <input type="text" id="name" placeholder="Lebron James">
+
+        </div>	
+
+        <div class="form">
+            <div class="left">
+            <label for="email">Email:</label>
+            </div>
+        <input type="email" id="email" placeholder="sjlaskdjf@usc.edu">
+        </div>
+
+        <div class="form">
+            
+            <p>Leave a Message:</p>
+
+            <textarea id=message placeholder="Hello..."></textarea>
+        </div>
+
+    </div>
+
+    
+
+    <div id="footer">
+        Clint Lin &copy; 2023
+    </div>
+    </body>
+
+
+
+
+</html>
