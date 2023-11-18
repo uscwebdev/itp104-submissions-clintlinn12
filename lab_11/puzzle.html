@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <Title>Clint Lin | Image Puzzle</Title>
+
+    <style>
+        #flexbox{
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .right{
+            right: 20px;
+            position: relative;
+            width: 700px;
+
+            box-shadow: 3px 3px 3px 3px black;
+        }
+
+        .left{
+            left: 30px;
+            position: relative;
+            width: 700px;
+
+            box-shadow: 3px 3px 3px 3px black;
+        }
+
+        .bottom{
+            bottom: 15px;
+            position: relative;
+            width: 700px;
+
+            box-shadow: 3px 3px 3px 3px black;
+        }
+
+        .top{
+            top: 20px;
+            position: relative;
+            width: 700px;
+
+            box-shadow: 3px 3px 3px 3px black;
+        }
+
+        .none{
+            width: 700px;
+        }
+
+        .draggable.is-pointer-down{
+            background: #09F;
+            z-index:2;
+        }
+
+        .draggable.is-dragging {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Puzzle</h1>
+
+    <div id="flexbox">
+    
+            <img src="img/row-1-column-1.jpg" alt="Row 1" class="right" class="puzzle">
+
+    
+            <img src="img/row-2-column-1.jpg" alt="Row 2" class="right" class="puzzle">
+
+    
+            <img src="img/row-3-column-1.jpg" alt="Row 3" class="top" class="puzzle">
+
+    
+            <img src="img/row-4-column-1.jpg" alt="Row 4" class="none" class="puzzle">
+
+    
+            <img src="img/row-5-column-1.jpg" alt="Row 5" class="bottom" class="puzzle">
+
+    
+            <img src="img/row-6-column-1.jpg" alt="Row 6" class="left" class="puzzle">
+
+    
+            <img src="img/row-7-column-1.jpg" alt="Row 7" class="none" class="puzzle">
+
+    
+            <img src="img/row-8-column-1.jpg" alt="Row 8" class="left" class="puzzle">
+
+    
+            <img src="img/row-9-column-1.jpg" alt="Row 9" class="left" class="puzzle">
+
+
+
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+    <script src="./script.js"></script>
+        
+    
+
+</body>
+
+</html>
