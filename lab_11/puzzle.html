@@ -6,6 +6,15 @@
     <Title>Clint Lin | Image Puzzle</Title>
 
     <style>
+
+    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: #f0f0f0;
+        }
         #flexbox{
             width: 700px;
             margin-left: auto;
@@ -101,7 +110,15 @@
     </div>
 
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-    <script src="./script.js"></script>
+
+    <script>
+        var draggableElements = document.querySelectorAll('.puzzle');
+        draggableElements.forEach(function (element) {
+            new Draggabilly(element, {
+                // options...
+            });
+        });
+    </script>
         
     
 
