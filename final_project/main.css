@@ -1,0 +1,188 @@
+#header{
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+
+    background-image: url(img/header.jpg);
+
+    background-size: cover;
+    background-position: center;
+
+    color:mintcream;
+    text-shadow: 0px 0px 10px #000;
+
+    width: auto;
+    height: 400px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+
+    flex-wrap: wrap;
+
+    font-size: 3em;
+}
+
+#top-menu{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+
+    display: flex;
+
+}
+
+#navigation ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    font-size: 1.3em;
+
+}
+
+#navigation li{
+    background-color: lightsteelblue;
+    text-align: center;
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 80px;
+
+}
+
+#navigation a{
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    color: whitesmoke;
+
+
+}
+
+#top-menu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sub-menu li{
+    width: auto;
+
+    text-align: center;
+
+    font-size: large;
+}
+
+#navigation li:hover > ul {
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+#content{
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 50px;
+
+    margin-top: 10px;
+}
+
+#paragraph{
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 50px;
+
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+#main{
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+#cuisine{
+    width: 680px;
+    height: auto;
+
+    padding-right: 15px;
+    float: left;
+
+}
+
+#paragraph1{
+    width: auto;
+    
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+
+    margin-top: 70px;
+}
+
+#container2{
+    width: 400px;
+    padding: 20px;
+
+
+}
+
+#side{
+    width: 600px;
+    padding: 20px;
+}
+
+#navigation a:hover, #navigation{
+    color:lightblue;
+    border-bottom: 2px solid lightblue;
+}
+
+#box{
+    margin: 0 auto;
+    width: auto;
+    background-color: lightsteelblue;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#footer{
+                background-color: lightsteelblue;
+			    text-align: center;
+			    color: whitesmoke;
+			    height: 50px;
+			    line-height: 50px;
+                width: auto;
+            }
+
